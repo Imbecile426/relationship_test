@@ -1,0 +1,11 @@
+<h1>Database Entries</h1>
+{% if entries %}
+    <ul>
+    {% for entry in entries %}
+        <li>ID: {{ entry[0] }}, Name1: {{ entry[1] }}, DOB1: {{ entry[2] }}, Name2: {{ entry[3] }}, DOB2: {{ entry[4] }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No entries found.</p>
+{% endif %}
+<a href="/">Back to Home</a>

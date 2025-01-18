@@ -1,0 +1,11 @@
+<h1>Question {{ qid + 1 }}</h1>
+<form action="/questions/{{ qid + 1 }}" method="post">
+    <p>{{ question }}</p>
+    <label for="your_answer">Your Answer:</label>
+    <input type="text" id="your_answer" name="your_answer" required><br>
+
+    <label for="partner_answer">Partner's Answer:</label>
+    <input type="text" id="partner_answer" name="partner_answer" required><br>
+
+    <button type="submit">Next Question</button>
+</form>
